@@ -2,45 +2,51 @@
 
 A collection of Cisco Packet Tracer networking labs covering routing, switching, subnetting, and network services.
 
-## About
+## Repository Contents
 
-This repository contains my Cisco Packet Tracer labs and networking projects completed during my cybersecurity studies.
+| Lab | Description |
+|-----|-------------|
+| Enterprise Network Design Using VLSM and Static Routing | Multi-site enterprise network implementing VLSM, Static Routing, DHCP, DNS, HTTP, and TFTP services. |
+| VLAN | VLAN creation, trunk configuration, and inter-VLAN routing. |
+| STP | Spanning Tree Protocol configuration and loop prevention. |
+| OSPF | Dynamic routing using Open Shortest Path First (OSPF). |
+| EIGRP | Dynamic routing using Enhanced Interior Gateway Routing Protocol (EIGRP). |
+| BGP | Border Gateway Protocol (BGP) configuration and route advertisement. |
 
-The labs cover topics such as:
-
-- IPv4 Addressing
-- VLSM
-- Static Routing
-- Dynamic Routing
-- VLAN
-- ACL
-- NAT
-- DHCP
-- DNS
-- HTTP
-- TFTP
-- Network Security
-
-## Repository Structure
-
-```
-Cisco-Packet-Tracer-Labs/
-│
-├── Labs/
-│   └── Lab01-Enterprise-Network-Design-Using-VLSM-and-Static-Routing/
-│
-└── README.md
-```
+---
 
 ## Software
 
 - Cisco Packet Tracer 8.x
+
+---
+
+## Networking Topics
+
+- IPv4 Addressing
+- VLSM
+- Static Routing
+- OSPF
+- EIGRP
+- BGP
+- VLAN
+- Trunking
+- STP
+- DHCP
+- DNS
+- HTTP
+- TFTP
+- Network Troubleshooting
+
+---
 
 ## Author
 
 **Saleem Al-Rhimi**
 
 Cybersecurity Student
+
+---
 
 ## License
 
