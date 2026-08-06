@@ -1,0 +1,118 @@
+R-GW#show running-config 
+Building configuration...
+
+Current configuration : 1884 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R-GW
+!
+!
+!
+enable secret 5 $1$mERr$4GFjx.E.TPgoWvx7jIfb40
+enable password lab
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0
+ ip address 160.10.10.2 255.255.255.240
+ clock rate 2000000
+!
+interface Serial0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/2
+ ip address 111.52.132.194 255.255.255.252
+!
+interface Serial0/3
+ ip address 111.52.132.197 255.255.255.252
+ clock rate 2000000
+!
+ip classless
+ip route 210.200.100.128 255.255.255.128 160.10.10.3 
+ip route 111.52.132.204 255.255.255.252 111.52.132.193 
+ip route 111.52.132.208 255.255.255.252 111.52.132.193 
+ip route 111.52.112.0 255.255.248.0 111.52.132.193 
+ip route 111.52.128.0 255.255.252.0 111.52.132.193 
+ip route 111.52.48.0 255.255.240.0 111.52.132.193 
+ip route 111.52.96.0 255.255.248.0 111.52.132.193 
+ip route 111.52.120.0 255.255.248.0 111.52.132.193 
+ip route 111.52.132.0 255.255.255.128 111.52.132.198 
+ip route 111.52.64.0 255.255.240.0 111.52.132.198 
+ip route 111.52.104.0 255.255.248.0 111.52.132.198 
+ip route 111.52.132.216 255.255.255.252 111.52.132.198 
+ip route 111.52.132.212 255.255.255.252 111.52.132.198 
+ip route 111.52.80.0 255.255.240.0 111.52.132.198 
+ip route 111.52.32.0 255.255.240.0 111.52.132.193 
+ip route 111.52.132.128 255.255.255.192 111.52.132.193 
+ip route 111.52.0.0 255.255.240.0 111.52.132.193 
+ip route 111.52.132.200 255.255.255.252 111.52.132.193 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ password saleem
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password FCIT
+ login
+line vty 5 15
+ password FCIT
+ login
+!
+!
+!
+end
+
+
+R-GW#
