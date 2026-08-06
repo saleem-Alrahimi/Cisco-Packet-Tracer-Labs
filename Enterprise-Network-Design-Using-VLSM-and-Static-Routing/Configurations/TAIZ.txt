@@ -1,0 +1,122 @@
+TAIZ#
+TAIZ#show running-config
+Building configuration...
+
+Current configuration : 1902 bytes
+!
+version 12.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname TAIZ
+!
+!
+!
+enable secret 5 $1$mERr$4GFjx.E.TPgoWvx7jIfb40
+enable password lab
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 111.52.48.1 255.255.240.0
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ ip address 111.52.96.1 255.255.248.0
+ duplex auto
+ speed auto
+!
+interface Serial0/0
+ ip address 111.52.132.206 255.255.255.252
+ clock rate 2000000
+!
+interface Serial0/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/2
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/3
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+router rip
+!
+ip classless
+ip route 111.52.32.0 255.255.240.0 111.52.132.205 
+ip route 111.52.0.0 255.255.224.0 111.52.132.205 
+ip route 111.52.112.0 255.255.248.0 111.52.132.205 
+ip route 111.52.128.0 255.255.252.0 111.52.132.205 
+ip route 111.52.120.0 255.255.248.0 111.52.132.205 
+ip route 111.52.132.0 255.255.255.128 111.52.132.205 
+ip route 111.52.132.128 255.255.255.192 111.52.132.205 
+ip route 111.52.80.0 255.255.240.0 111.52.132.205 
+ip route 111.52.104.0 255.255.248.0 111.52.132.205 
+ip route 111.52.64.0 255.255.240.0 111.52.132.205 
+ip route 111.52.132.208 255.255.255.252 111.52.132.205 
+ip route 111.52.132.200 255.255.255.252 111.52.132.205 
+ip route 111.52.132.212 255.255.255.252 111.52.132.205 
+ip route 111.52.132.216 255.255.255.252 111.52.132.205 
+ip route 111.52.132.192 255.255.255.252 111.52.132.205 
+ip route 111.52.132.196 255.255.255.252 111.52.132.205 
+ip route 160.10.10.0 255.255.255.240 111.52.132.205 
+ip route 210.200.100.128 255.255.255.128 111.52.132.205 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+line con 0
+ password saleem
+ login
+!
+line aux 0
+!
+line vty 0 4
+ password SALEEM
+ login
+!
+!
+!
+end
+
+
+TAIZ#
+TAIZ#
