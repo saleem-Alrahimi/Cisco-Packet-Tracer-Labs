@@ -40,6 +40,22 @@ A collection of Cisco Packet Tracer networking labs covering routing, switching,
 
 ---
 
+
+## Configuration Files
+
+The router configuration files used in this project are available in the `Configurations` directory.
+
+| Device | Configuration |
+|---------|---------------|
+| Gateway Router | `Gateway-Router.txt` |
+| ISP | `ISP.txt` |
+| Sana'a 1 | `SANA1.txt` |
+| Sana'a 2 | `SANA2.txt` |
+| Taiz | `TAIZ.txt` |
+| Aden | `ADEN.txt` |
+| Hodeidah | `HODEIDAH.txt` |
+| Mukalla | `MUKALLA.txt` |
+
 ## Author
 
 **Saleem Al-Rhimi**
